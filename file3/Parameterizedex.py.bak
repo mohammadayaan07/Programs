@@ -1,0 +1,7 @@
+#Parameterizedex1.py
+class student:
+	def __init__(self,a):
+		self.name=a
+		print("ur name is {}".format(self.name))
+s=student(input("enter a name"))
+	

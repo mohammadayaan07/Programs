@@ -1,0 +1,8 @@
+#Program for storing sno,sname ,marks in an object of Programmer-defined class
+#StudEx1.py----Instance Data members
+
+class studinfo:pass
+s1=studinfo()
+s2=studinfo()
+print(s1.__dict__)
+print(s2.__dict__)

@@ -1,0 +1,12 @@
+#sortedoflst.py
+def sortlst(a,si):
+	l=len(a)
+	if si==l or si==l-1:
+		return True
+	if a[si]>a[si+1]:
+		return False
+	issort=sortlst(a,si+1)
+	return issort
+a=[1,2,30,4]
+lf=sortlst(a,0)
+print(lf)

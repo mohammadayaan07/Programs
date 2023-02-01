@@ -1,0 +1,19 @@
+#instancesEx1.py
+class student:
+	fac="kvr"
+
+
+s1=student()
+s2=student()
+print(s1.__dict__)
+print(s2.__dict__)
+print("*"*40)
+s1.name="AYAAN"
+s1.classs="MCA"
+s1.sub="Python"
+s2.name="Tanzil"
+s2.classs="Bcom"
+s2.sub="C"
+print(s1.__dict__)
+print(s2.__dict__)
+print("*"*40)

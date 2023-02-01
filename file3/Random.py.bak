@@ -1,0 +1,4 @@
+#Randint.py
+import random as r
+for i in range(1,6):
+	print(round(r.random(),4))

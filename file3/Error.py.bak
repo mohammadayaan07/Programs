@@ -1,0 +1,4 @@
+#Error.py
+class casedepooste(Exception):pass
+class casewithdarwe(BaseException):pass
+class negtive(Exception):pass 

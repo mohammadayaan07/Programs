@@ -1,0 +1,9 @@
+#febonacci.py
+def feb(n):
+	if n==1 or n==0:
+		return 1
+	feb_1=feb(n-1)
+	feb_2=feb(n-2)
+	output=feb_1+feb_2
+	print(output)
+a=feb(6)

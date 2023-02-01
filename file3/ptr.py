@@ -1,0 +1,9 @@
+#ptr.py
+n=int(input("Enter the number:"))
+for i in range(0,n):
+	for v in range(0,n):
+		if (i==0 or v==(n-1) or i==v):
+			print("*",end="")
+		else:
+			print(end=" ")
+	print()

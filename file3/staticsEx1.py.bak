@@ -1,0 +1,31 @@
+#staticsEx1.py
+class student:
+	def studentinfo(self):
+		self.sname=input("enter the name of student:")
+		self.sno=int(input("Enter the student no:"))
+		self.subs=input("Enter the subject of student:")
+class employee:
+	def employeeinfo(self):
+		self.ename=input("enter the name of student:")
+		self.eno=int(input("Enter the student no:"))
+		self.esal=int(input("Enter the subject of student:"))
+class teacher:
+	def teacherinfo(self):
+		self.tname=input("enter the name of student:")
+		self.tno=int(input("Enter the student no:"))
+		self.tsal=(input("Enter the subject of student:"))
+
+class hyd:
+	@staticmethod
+	def infotable(kvr):
+		for key,val in kvr.___dict__.items():
+			print("{}____{}".format(key,val))
+s=student()
+e=employee()
+t=teacher()
+t.teacherinfo()
+s.studentinfo()
+e.employeeinfo()
+hyd.infotable(t)
+hyd.infotable(s)
+hyd.infotable(e)

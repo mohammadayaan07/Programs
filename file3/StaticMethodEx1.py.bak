@@ -1,0 +1,30 @@
+#StaticMethodEx1.py
+class student:
+	def stu(self):
+		self.sname=input("Enter the student Name:")
+		self.roll=int(input("enter the roll"))
+class emplyee:
+	def emp(self):
+		self.ename=input("Enter the emplyees Name:")
+		self.inc=int(input("enter the INcome:"))
+class teacher:
+	def tec(self):
+		self.tname=input("Enter the Teacher Name:")
+		self.sal=int(input("enter the Salary"))
+class hyd:
+	@staticmethod
+	def disp(kvr,m):
+		print("\t{} INFO".format(m))
+		print("*"*40)
+		for i,v in kvr.__dict__.items():
+			print("{}-----{}".format(i,v))
+
+s=student()
+e=emplyee()
+t=teacher()
+s.stu()
+e.emp()
+t.tec()
+hyd.disp(s,"STUDENT ")
+hyd.disp(e,"EMPLYEES")
+hyd.disp(t,"TEACHER")

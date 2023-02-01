@@ -1,0 +1,11 @@
+#write a python program which will read student values such as sno,sname and marks. save the details of  the student in a file by using pickling and read the student record values from the file by using unpickling.impliment this example by using classes and objects.
+#Student.py--File Name and Module Name
+
+class student:
+	def __init__(self,sno,sname,marks):
+		self.sno=sno
+		self.sname=sname
+		self.marks=marks
+	def dispstuddata(self):
+		print("\tsno\tsname\tmarks")
+		print("\t{}\t{}\t{}".format(self.sno,self.sname,self.marks))

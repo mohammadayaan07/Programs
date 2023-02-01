@@ -1,0 +1,9 @@
+#ployEx3.py
+class Square:
+	def __init__(self):
+		print("drawing square")
+class rect(Square):
+	def __init__(self):
+		print("drawing rectange")
+		Square(self).__init__()
+s=rect()

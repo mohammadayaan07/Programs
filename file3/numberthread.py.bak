@@ -1,0 +1,16 @@
+#numberthread.py
+import threading,time
+def num(n):
+	for val in range(1,n+1):
+		print(threading.current_thread().name)
+		print(i)
+		time.sleep(1)
+t1=threading.Thread(target=num,args=(10,))
+t1.name="Number"
+print(threading.current_thread().name)
+print(threading.active_count())
+print(t1.is_alive())
+t1.start()
+print(threading.active_count())
+t1.jion()
+print(t1.is_alive())

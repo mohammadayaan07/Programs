@@ -1,0 +1,22 @@
+#decoratorEx.py
+def getval():
+	return int(input("Enter the side:"))
+def cube(gt):
+	def opt():
+		n=gt()
+		cube=n**3
+		return cube
+	return opt
+def square(gt):
+	def opt():
+		n=gt()
+		square=n**2
+		return square
+	return opt
+
+a=cube(getval)
+c=sqaure(getval)
+ab=a()
+ad=c()
+print(ab)
+print(ad)

@@ -1,0 +1,8 @@
+#threadingEx1.py
+import threading
+tname=threading.current_thread()
+print("default name of thread",tname.name)
+dfname=threading.current_thread().name
+print("default name of thread",dfname)
+noat=threading.active_count()
+print("Number of active threads=",noat)

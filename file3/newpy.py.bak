@@ -1,0 +1,5 @@
+#newpy.py
+fv=open("writeline.py","r+" )
+contant=fv.read()
+print(fv)
+fv.close()

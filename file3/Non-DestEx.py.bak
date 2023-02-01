@@ -1,0 +1,20 @@
+#Non-DestEx.py
+#pure cinstructor
+#here del or none both are useing for del or calling garbage collector 
+import time
+class student:
+	def __init__(self,sname,smarks):
+		self.sname=sname
+		self.smarks=smarks
+		print("STUDENT NAME={}\tMARKS={}".format(self.sname,self.smarks))
+	def __del__(self):
+		print("gc call here")
+print("\nHERE PROGRAM START")
+s=student("AYAAN",50)
+print("first gc call here")
+s=None #here we Calling GC Forcefully and it inturns calls Destructor by using  NONE
+time.sleep(5)
+s1=student("kgf",99)
+del s1 #Calling GC Forcefully and it inturns calls Destructor by using del 
+print("PROGRAM IS ENDED")
+s2=student("mrx",87)

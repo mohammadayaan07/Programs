@@ -1,0 +1,9 @@
+#nnaturalno.py
+def nnumber(n):
+	if n==0:
+		return 
+	nnumber(n-1)
+	print(n)
+	return 
+pvt=nnumber(5)
+print(pvt)

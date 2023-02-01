@@ -1,0 +1,9 @@
+#try1.py
+from EncapAbs import bank
+s=bank()
+s.info()
+print(s.pin)
+print(s.aname)
+print(s.branch)
+print(s.acno)
+print(s.phoneno)
